@@ -1,6 +1,6 @@
 # Важно!!
 - Проект запускается на версии Node v22.17.0 и выше
-- https://phenomenal-shortbread-b9fb98.netlify.app/ - задеплоил сюда
+- https://winp-m6sqkmim6-temirhanmain-2490s-projects.vercel.app/ - задеплоил сюда
 # Установка
 ```
 npm i
