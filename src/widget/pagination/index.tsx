@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/index.scss";
+import {usePaginationHook} from "./hook/usePaginationHook";
 
 type TProps = {
   setSkipItems: React.Dispatch<React.SetStateAction<number>>,
@@ -17,14 +18,7 @@ export const Pagination: React.FC<TProps> = (
     currentPage
   }
 ) => {
-  const handlerNextPage = () => {
-    setSkipItems((prevState) => prevState + pages);
-    setCurrentPage((prevState: number) => prevState + 1);
-  };
-  const handlerPrevPage = () => {
-    setSkipItems((prevState: number) => prevState - pages);
-    setCurrentPage((prevState: number) => prevState - 1);
-  };
+  const {handlerPrevPage, handlerNextPage} = usePaginationHook(pages, setSkipItems, setCurrentPage);
   return (
     <div className={"pagination__container"}>
       <button
@@ -33,7 +27,7 @@ export const Pagination: React.FC<TProps> = (
       >
         Previous Page
       </button>
-      <span>{currentPage} / {!allPage ? 0 : allPage}</span>
+      <span>{currentPage} / {!allPage ? 0 : Math.ceil(allPage)}</span>
       <button
         onClick={handlerNextPage}
         disabled={currentPage === allPage}

@@ -9,6 +9,9 @@ export const ItemsList: React.FC<TProps> = ({data}) => {
 
   return (
     <div className={"item__list_container"}>
+      {data.length === 0 && (
+        <h1 className={"non__items"}>Нет данных...</h1>
+      )}
       {data.map(item => {
         return (
           <div className={"item__list"} key={item.code}>

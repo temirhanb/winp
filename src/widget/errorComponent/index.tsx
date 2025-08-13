@@ -2,7 +2,7 @@ import React from "react";
 import "./style/index.scss";
 
 type TProps = {
-  error: string
+  error: string | undefined
 }
 export const ErrorComponent: React.FC<TProps> = ({error}) => {
   return <div className={"error__container"}>
