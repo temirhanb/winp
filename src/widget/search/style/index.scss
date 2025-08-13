@@ -1,0 +1,93 @@
+$purple: #dab2ff;
+
+.search__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  padding: 30px 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:0 20px;
+  }
+}
+
+.search__input_container {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
+.input {
+  outline: none;
+  height: 30px;
+  border: 2px solid $purple;
+  border-radius: 10px;
+
+  &.input__search {
+    padding-left: 10px;
+
+    &:focus {
+      box-shadow: 2px 10px 20px 12px rgb(0 0 0 / 0.1);
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &.input__page {
+    padding-left: 10px;
+
+    &:focus {
+      box-shadow: 2px 10px 20px 12px rgb(0 0 0 / 0.1);
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+}
+
+.search__page_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 20px;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
+.search__button {
+  display: flex;
+  height: 35px;
+  border: 2px solid $purple;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: $purple;
+  background: white;
+  cursor: pointer;
+
+  &:active {
+    opacity: .8;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-top: 20px;
+  };
+}

@@ -1,0 +1,35 @@
+$purple: #dab2ff;
+$white: #fff;
+
+.pagination__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  button {
+    border: 2px solid $purple;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    outline: none;
+    cursor: pointer;
+    color: $purple;
+
+    &:active {
+      opacity: .8;
+    }
+  }
+
+  span {
+    font-size: 20px;
+    margin: 0 20px;
+    color: $purple;
+  }
+  @media screen and (max-width: 768px) {
+    margin-right: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+}

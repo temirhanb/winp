@@ -1,0 +1,1 @@
+export const API_URL = "http://fakestock.everys.com/api/v1";

@@ -1,0 +1,12 @@
+$purple: #dab2ff;
+
+.pending__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  h1 {
+    color: $purple;
+  }
+}

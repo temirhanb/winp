@@ -1,0 +1,16 @@
+$purple: #dab2ff;
+$white: #fff;
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: $purple;
+}
+
+.header__container-h {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
