@@ -35,6 +35,10 @@ export const ItemsList: React.FC<TProps> = ({data}) => {
               <h1 className={"item__list-title"}>Подпись:</h1>
               <p className={"item__list-description"}>{item.title}</p>
             </div>
+            <div>
+              <h1 className={"item__list-title"}>Код:</h1>
+              <p className={"item__list-description"}>{item.code}</p>
+            </div>
           </div>
         );
       })}
