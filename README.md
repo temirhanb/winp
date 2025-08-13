@@ -1,6 +1,6 @@
 # Важно!!
 - Проект запускается на версии Node v22.17.0 и выше
-- https://onlytz.netlify.app/ - задеплоил сюда
+- https://phenomenal-shortbread-b9fb98.netlify.app/ - задеплоил сюда
 # Установка
 ```
 npm i
