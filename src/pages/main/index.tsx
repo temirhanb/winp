@@ -45,7 +45,7 @@ export const MainPage: React.FC = () => {
           currentPage={currentPage}
         />)}
       {!isPending && (
-        <ItemsList data={data.items}/>
+        <ItemsList data={data?.items}/>
       )}
     </main>
   );
