@@ -36,7 +36,7 @@ export const MainPage: React.FC = () => {
       {isPending && (
         <PendingComponent/>
       )}
-      {!isPending && (
+      {!isPending && !isError && (
         <Pagination
           pages={pages}
           setCurrentPage={setCurrentPage}
@@ -44,7 +44,7 @@ export const MainPage: React.FC = () => {
           allPage={allPage}
           currentPage={currentPage}
         />)}
-      {!isPending && (
+      {!isPending && !isError && (
         <ItemsList data={data?.items}/>
       )}
     </main>
